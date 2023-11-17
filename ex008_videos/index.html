@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML 5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+   
+    <video width="500" controls>
+        <source src="videos/exemplo.mp4" type="video/mp4">
+    </video>
+    <!-- lembrando: aqui temos a mesma situação das imagens, onde precisamos colocar vídeos com formatos diferentes para que todos os navegadoes consigam carregar o arquivo, podendo ser em mp4, ogv, WebM e outros...
+    
+    Com o parâmetro POSTER podemos adicionar uma capa ao vídeo, a tag ficaria assim:
+    <video width="300" poster="caminho/imagem.png" controls></video> -->
+
+    <h1>Inserindo vídeos do youtube</h1>
+    <iframe width="500" height="290" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=qH-iv4jGADBbNmOl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <!-- é muito interessante criar um canal no youtube e upar os vídeos do site nesse canal, pois assim os custos de hospedagem serão menores, afinal quando a pessoa assistir o vídeo no seu site, irá consumir dados do youtube -->
+</body>
+</html>

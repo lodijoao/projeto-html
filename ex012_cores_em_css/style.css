@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #D8FFDB, #C7FFED);
+}
+
+main {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 5px 5px 15px #023535b0; 
+    /* box shadow: 1º parâmetro - o qnt a sombra vai pro lado, 2º - o qnt a sombra vai p baixo, 3º - o qnt a sombra vai se espalhar, 4º - opacidade */
+}
+h1 {
+    color: #023535;
+    text-align: center;
+    text-shadow: 1px 1px 0px #012222;
+}
+
+h2 {
+    color: #015958;
+}
+
+p {
+    text-align: justify;
+}

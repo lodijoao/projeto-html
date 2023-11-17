@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        } 
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+            /* active é quando o link está ativo, se eu clico, a letra fica amarela
+            # é id
+            . é class
+            : é pseudo-classe
+            :: é pseudo-elemento
+            > é children */
+        }
+        
+        .especial {
+            background-color: rgb(244, 78, 78);
+        }
+
+        .especial::before {
+            content: '♕';
+        }
+
+        a::after {
+            content: ' ♔';
+            /* tabela de códigos de símbolos em https://erikasarti.com/html/dingbats-simbolos-desenhos/ */
+            text-decoration: none;
+            font-weight: normal;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/@CursoemVideo" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://cursoemvideo.com/">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>

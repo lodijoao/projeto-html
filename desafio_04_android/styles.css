@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@0,600;1,600&display=swap');
+
+@font-face {
+    font-family: idroid;
+    src: url(fontes/idroid.otf) format(opentype);
+}
+
+:root {
+    --cor01: #E8E5C2;
+    --cor02: #C9EDD8;
+    --cor03: #379A67;
+    --cor04: #3CD681;
+    --cor05: #1A5C38;
+
+    --fontepadrao: Arial, Verdana, Helvetica, sans-serif;
+    --fontecabecalho: 'Bebas Neue', cursive;
+    --fontedestaque: 'idroid';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #3CD681, #1A5C38);
+    text-align: center;
+    color: white;
+    /* padding: 5px; */
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px 5px 3px 5px;
+    min-height: 150px;
+    
+}
+
+/* caso o h1 não estivesse logo abaixo do header, por exemplo: header > div > h1, eu não poderia colocar o >, pois o h1 não seria filho direto do header, então eu faria: header h1 {} */
+header > h1 {
+    margin: auto;
+    margin-bottom: 25px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.544);
+}
+
+#txtheader {
+    text-align: center;
+    font-size: 1em;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-indent: 0px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.544);
+}
+
+nav {
+    background-image: linear-gradient(to bottom,#1F7044, #1A5C38);
+    text-align: left;
+    padding: 1px;
+    margin: 3px 5px 3px 5px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.421);
+}
+
+nav > a:hover {
+    background-color: #379A67;
+    color: #113c25;
+    transition: 0.2s;
+    border-radius: 5%;
+    padding: 8px 3px 9px 3px;
+    margin: 3px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 40px;
+    padding: 3px;
+    margin: 3px;
+}
+
+.links {
+    background-color: #C9EDD8;
+    color: #2A6846;
+    font-weight: bold;
+}
+
+.links:hover {
+    text-decoration: underline;
+    color: var(--cor04);
+}
+
+body {
+    background-color: #E8E5C2;
+    text-align: center;
+}
+
+main {
+    background-color: white;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 20px;
+    max-width: 800px;
+    min-width: 320px;
+    /* border-radius: 0px 0px 10px 10px; */
+    box-shadow: 0px 2px 9px 5px rgba(0, 0, 0, 0.307);
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 100;
+}
+
+h2, h3 {
+    font-family: var(--fontedestaque);
+    text-align: left;
+    color: #2A6846;
+    font-size: 1.3em;
+}
+
+h3 {
+    background-image: linear-gradient(to right, #C9EDD8, white);
+    padding: 5px;
+}
+
+h4 {
+    color: white;
+    background-color: #2FA866;
+    text-align: left;
+    padding: 7px;
+    margin: -5px -5px 0px -5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+    margin: 15px 0px 15px 0px;
+    line-height: 1.2em;
+    /* line-height é o espaço entre as linhas */
+    font-size: 1em;
+}
+
+#video {
+    background-color: #1A5C38;
+    margin: auto;
+    margin: 0px -16px 30px -16px;
+    position: relative;
+    padding-bottom: 58%;
+}
+
+#video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: #C5EBD6;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 3px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.356);
+}
+
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+    text-align: left;
+    /* 00A0 é um espaço em quebras */
+    list-style-type: '\1F5F8\00A0';
+}
+
+li {
+    text-decoration: none;
+}
+
+#histdroid {
+    color: #113c25;
+    padding: 0px;
+    margin: 0px;
+}
+
+strong {
+    color: var(--cor05);
+    font-weight: bold;
+    padding: 2px;
+}
+
+footer {
+    background-color: var(--cor05);
+    color: white;
+    margin-bottom: -15px;
+}
+
+footer p {
+    text-align: center;
+    padding: 2px;
+}
+
+footer p:hover {
+    text-decoration: underline;
+}

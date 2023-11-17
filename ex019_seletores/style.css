@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body {
+    background-color: #03CEA4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #191249;
+}
+
+/* 
+
+o que eu colocar em id em html, é # em css 
+o que eu colocar em class em html, é  . em css
+
+*/
+
+#principal {
+    text-align: center;
+    background-color: #191249;
+    color: white;
+}
+
+h2 {
+    color: #291b85;
+}
+
+.basico { 
+    color: green;
+    font-weight: bold;
+}
+
+.intermediario {
+    color: rgb(255, 255, 0);
+}
+
+.avançado {
+    color: red;
+}
+
+.destaque {
+    background-color: #3e5af7b5;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho doseu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto_p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto_m.png" type="image/png">
+        <img src="imagens/foto_g.png" alt="foto flexível">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir um áudio em HTML 5</p>
+    <!-- <audio src="midias/Bully- Scholarship Edition - Detention (Mowing The Lawn).mp3" controls autoplay></audio>
+    essa tag audio funciona para arquivos em MP3, WAV, OGG -->
+    <audio preload="metadata" controls>
+        <source src="midias/Bully- Scholarship Edition - Detention (Mowing The Lawn).mp3" type="audio/mpeg">
+        <!-- <source src="midias/Bully- Scholarship Edition - Detention (Mowing The Lawn).ogg" type="audio/ogg">
+        <source src="midias/Bully- Scholarship Edition - Detention (Mowing The Lawn).wav" type="audio/wav">
+        <p>não foi possível carregar o áudio</p>
+        se eu tiver esse arquivo de áudio em ogg ou wav, posso botar essas 1 tags no código, pois dependendo do navegador, pode não carregar o arquivo em mp3
+        Lembrando que a ordem no código é importante, ou seja, primeiro o navegador vai tentar carregar o mp3, se não conseguir, vai pro ogg, depois wav e, se não conseguir nenhum, vai mostrar a mensagem que coloquei na tag p -->
+    </audio>
+</body>
+</html>

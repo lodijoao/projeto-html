@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang ="pt-br">
+        <head>
+            <img src="logo.png" width="250">
+            <title>Formulário</title>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" type="text/css" href="estilo.css">            
+        </head>
+        <body>
+            <header>
+            <nav>
+            <ul>
+                <li>
+                    <a href="Inicio.html">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="contato.html">
+                        Contato
+                    </a>
+                </li>
+            </ul>
+            </nav>
+            </header>
+            <main>
+            <h1><b>Formulário de Contato</b></h1>
+            <p>Preencha o formulário abaixo</p>
+            <fieldset>                
+                <legend>Dados do Contato</legend><br>
+                <form id="frminscricao" action="contato.php" method="POST"></form>
+                <label>Nome</label><br>                
+                <input type="text" required="required" id="txtnome"><br>
+                <label>Data de nascimento</label><br>
+                <input type="date" required="required" id="txtdatadenascimento"><br>
+                <label>Sexo</label><br>
+                <input type="radio" name="rdosexo" value="M" required="required">
+                <label>Masculino</label>
+                <input type="radio" name="rdosexo" value="F" required="required">
+                <label>Feminino</label><br>
+                <label>Endereço</label><br>
+                <input type="text" required id="txtendereço"><br>
+                <label>Estado</label><br>
+                <select id="cbxestado" required="required">
+                    <option value="">-Selecione-</option>
+                    <option value="1">PR</option>
+                    <option value="2">SC</option>
+                    <option value="3">RS</option>
+                    </select><br>
+                <label>Cidade</label><br>
+                <select id="cbxcidade" required="required">
+                    <option value="">-Selecione-</option>
+                    <option value="1">Curitiba</option>
+                    <option value="2">Florianópolis</option>
+                    <option value="3">Porto Alegre</option> 
+                    </select><br>
+                <label>Telefone</label><br>
+                <input type="tel" required id="required" id="txtcelular" placeholder="(**)****-****"><br>
+                <label>E-mail</label><br>
+                <input type="text" required="required"><br>
+                <label>Área de interesse</label><br>
+                <input type="checkbox" required="required">
+                <label>HTML</label>
+                <input type="checkbox" required="required">
+                <label>CSS</label>
+                <input type="checkbox" required="required">
+                <label>JavaScript</label><br>
+                <label>Mensagem</label><br>
+                <textarea cols="50" rows="5" required="required"></textarea><br>
+                <input id="btnEnviar" type="submit" value="Enviar" />         
+                </form>                
+            </fieldset>
+            </main>
+            <footer>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="C:\Users\lodij\OneDrive\Área de Trabalho\projeto html\logo-insta.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="C:\Users\lodij\OneDrive\Área de Trabalho\projeto html\logo-facebook.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="C:\Users\lodij\OneDrive\Área de Trabalho\projeto html\logo-twitter.png" />
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+        </body>
+</html>

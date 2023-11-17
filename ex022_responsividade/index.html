@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+        header {
+            background-image: linear-gradient(to bottom, #2E6171, #add8e6);
+            padding: 15px;
+            box-shadow: 1px 3px 9px 5px rgba(0, 0, 0, 0.558);
+            text-align: center;
+        }
+
+        body {
+            background-color: #add8e6;
+            /* background:
+                linear-gradient(63deg, #999 23%, transparent 23%) 7px 0,
+                linear-gradient(63deg, transparent 74%, #999 78%),
+                linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%),
+                #444; */
+background-size: 16px 48px;
+background-size: 16px 48px;;
+        }
+        main {
+            margin: auto;
+            background-color: white;
+            box-shadow: 0px 2px 9px 5px rgba(0, 0, 0, 0.555);
+            border-bottom-left-radius: 10px;
+            /* border-bottom-right-radius: 10px; */
+
+            min-width: 320px;
+            max-width: 800px;
+        }
+
+        nav {
+            text-align: left;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        #caixa {
+            background-color: blue;
+            border-radius: 10px;
+            color: white;
+            border: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>teste</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla consequuntur harum cumque quaerat quasi accusamus incidunt eos, ab atque tempore illum alias odit. Inventore enim laboriosam consectetur natus eius illum!</p>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Teste Responsividade</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta eum numquam cum quas cumque provident, quis accusantium molestiae deleniti iure inventore accusamus repudiandae fugit a architecto. Aliquid impedit odio ipsa.lor. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta eum numquam cum quas cumque provident, quis accusantium molestiae deleniti iure inventore accusamus repudiandae fugit a architecto. Aliquid impedit odio ipsa.lor. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta eum numquam cum quas cumque provident, quis accusantium molestiae deleniti iure inventore accusamus repudiandae fugit a architecto. Aliquid impedit odio ipsa.lor. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta eum numquam cum quas cumque provident, quis accusantium molestiae deleniti iure inventore accusamus repudiandae fugit a architecto. Aliquid impedit odio ipsa.lor</p>
+        <picture>
+            <!-- quando o browser tiver um width de 800px a imagem quebra  -->
+            <source media="(max-width: 800px)" srcset="../desafio_04_android/imagens/irina-blok-pq.jpg">
+            <img src="../desafio_04_android/imagens/irina-blok.jpg" alt="irina blok">
+        </picture>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta eum numquam cum quas cumque provident, quis accusantium molestiae deleniti iure inventore accusamus repudiandae fugit a architecto. Aliquid impedit odio ipsa.lor. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta eum numquam cum quas cumque provident, quis accusantium molestiae deleniti iure inventore accusamus repudiandae fugit a architecto. Aliquid impedit odio ipsa.lor. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta eum numquam cum quas cumque provident, quis accusantium molestiae deleniti iure inventore accusamus repudiandae fugit a architecto. Aliquid impedit odio ipsa.lor. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta eum numquam cum quas cumque provident, quis accusantium molestiae deleniti iure inventore accusamus repudiandae fugit a architecto. Aliquid impedit odio ipsa.lor</p>
+        <div id="caixa">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos facere, eveniet delectus esse eligendi, odio sed exercitationem excepturi tempora quia amet aperiam reiciendis harum quas autem quos molestiae aliquid reprehenderit.</p>
+        </div>
+    </main>
+</body>
+</html>
